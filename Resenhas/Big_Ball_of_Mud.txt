@@ -1,0 +1,45 @@
+Resenha – Big Ball of Mud
+
+O artigo Big Ball of Mud, escrito por Brian Foote e Joseph Yoder, trata de um assunto que, apesar de ser muito comum no desenvolvimento de software, quase nunca é discutido de forma direta: sistemas que acabam com uma arquitetura bagunçada e cheia de improvisos. Os autores dão a esse tipo de sistema o nome de “Bola de Lama Gigante”.
+
+Essa “bola de lama” é basicamente um conjunto de códigos e estruturas sem um planejamento claro, que vão sendo construídos e modificados com o tempo, quase sempre para resolver problemas imediatos. É aquele tipo de sistema que começa pequeno e simples, mas, com as pressões do dia a dia, vai recebendo remendos, adaptações e mudanças apressadas. O resultado é um código difícil de entender, cheio de partes repetidas, dependências mal feitas e praticamente sem documentação.
+
+O ponto central do artigo é que, apesar de tudo isso parecer ruim, esses sistemas funcionam — e, por incrível que pareça, é justamente por isso que eles são tão comuns. Muitas vezes, no mundo real, não há tempo ou recursos para criar uma arquitetura perfeita desde o início. O mais importante é entregar algo que funcione, e depois pensar nos ajustes.
+
+Padrões que levam a uma “Bola de Lama”
+
+Para explicar como esses sistemas surgem e por que continuam funcionando, Foote e Yoder descrevem alguns padrões, que são situações recorrentes na vida de um projeto.
+
+1. Throwaway Code
+Esse padrão aparece quando um código é feito rapidamente, com a intenção de ser descartado depois. Pode ser um protótipo ou um teste que o programador cria apenas para validar uma ideia. No entanto, quando esse código funciona, ele acaba sendo mantido e incorporado ao sistema, mesmo sem estar bem estruturado.
+Por exemplo, imagine um desenvolvedor que cria uma função rápida para mostrar o total de vendas em uma tela de teste. A ideia era refazer a função depois, mas como ela “funcionou”, ela é mantida exatamente como está, mesmo sendo mal otimizada.
+
+2. Piecemeal Growth
+É o crescimento aos pedaços, sem planejamento geral. Cada nova funcionalidade é encaixada no sistema do jeito que for mais rápido. Isso pode até ajudar no curto prazo, mas no longo prazo deixa o sistema confuso e difícil de manter.
+Um exemplo simples: um sistema de loja online que começa vendendo apenas roupas. Depois, o dono decide vender eletrônicos e alimentos, mas em vez de refazer a estrutura para suportar diferentes categorias, o programador apenas copia e adapta códigos já existentes, gerando duplicações e inconsistências.
+
+3. Keep it Working
+A prioridade aqui é não deixar o sistema parar. Mesmo que o código esteja ruim, a regra é: “se está funcionando, deixa assim”. Mudanças grandes só acontecem se forem absolutamente necessárias, porque o risco de quebrar algo é alto.
+Na prática, isso é comum em sistemas que já estão no ar há anos e que empresas dependem para funcionar, como sistemas bancários ou de controle de estoque.
+
+4. Sweeping it Under the Rug
+Traduzindo, seria algo como “varrer para debaixo do tapete”. É quando o problema é escondido ou isolado, em vez de resolvido de verdade. O código problemático é colocado atrás de uma interface bonita ou escondido em um módulo separado para que o resto do sistema não “veja” a bagunça.
+Por exemplo, criar uma tela nova e bonita para o usuário, mas deixar o código antigo, mal feito, funcionando nos bastidores.
+
+5. Reconstruction
+Esse padrão é a última saída. Quando o sistema está tão complicado e deteriorado que não dá mais para manter, a solução é jogar tudo fora e começar do zero. Apesar de ser uma decisão difícil, às vezes é a única maneira de recuperar o controle sobre o software.
+Um exemplo é quando uma empresa decide substituir um sistema de gestão antigo por outro totalmente novo, porque os custos e riscos de manutenção já não compensam.
+
+O lado bom e o lado ruim da “Bola de Lama”
+
+O artigo deixa claro que, apesar de todos os problemas, a “bola de lama” não é sempre algo negativo. Ela pode ser útil nas fases iniciais de um projeto, quando a equipe ainda está descobrindo como o sistema deve funcionar. Nesse momento, ter uma arquitetura muito rígida pode até atrapalhar, porque limita as mudanças rápidas que são necessárias para adaptar o produto.
+
+Por outro lado, os autores alertam que deixar o sistema nesse estado por muito tempo é perigoso. O acúmulo de improvisos e remendos aumenta a complexidade e torna o código mais frágil. Com o tempo, novos programadores terão dificuldade para entender o sistema, e qualquer modificação simples pode gerar erros inesperados.
+
+Conclusão
+
+O texto de Foote e Yoder é realista e mostra que, no mundo do desenvolvimento de software, as decisões técnicas são fortemente influenciadas por fatores externos como prazos, orçamento e mudanças de escopo. Embora a teoria diga que devemos sempre buscar a “boa arquitetura”, a prática muitas vezes exige soluções rápidas e improvisadas.
+
+Como estudante de Engenharia de Software, vejo essa leitura como um alerta importante. Entendi que não basta conhecer as boas práticas de arquitetura, mas também saber lidar com as pressões reais de um projeto. O desafio é encontrar um equilíbrio: entregar valor rapidamente sem deixar que o sistema se torne impossível de manter. É preciso reconhecer quando a “bola de lama” está começando a atrapalhar e, a partir daí, planejar melhorias, refatorações e, em casos extremos, a reconstrução completa.
+
+Essa visão ajuda a perceber que o papel do engenheiro de software não é apenas escrever código, mas também tomar decisões estratégicas sobre como e quando investir na qualidade da arquitetura. Afinal, no fim das contas, um sistema que funciona e pode evoluir de forma saudável vale mais do que uma obra-prima que nunca sai do papel.
