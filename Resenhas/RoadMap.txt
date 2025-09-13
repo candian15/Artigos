@@ -1,0 +1,11 @@
+Resenha
+
+O artigo Software Architecture: A Roadmap, escrito por David Garlan, apresenta um panorama sobre a evolução e os desafios da arquitetura de software, destacando sua importância crescente dentro da engenharia de software. O autor mostra como, ao longo da última década, a área passou de práticas informais para uma disciplina cada vez mais estruturada, com métodos, padrões e ferramentas próprias.
+
+Logo no início, Garlan deixa claro que a arquitetura é fundamental para o sucesso de sistemas complexos, pois dela dependem características como desempenho, confiabilidade, portabilidade e escalabilidade. Uma arquitetura bem planejada aumenta as chances de o software atender aos requisitos esperados, enquanto uma arquitetura mal pensada pode comprometer todo o projeto.
+
+O texto também mostra a transição do passado para o presente. No início, as descrições arquiteturais eram feitas de forma improvisada, com diagramas simples que raramente eram mantidos. Hoje, a área já conta com linguagens específicas (ADLs), padrões arquiteturais, estilos consolidados (como cliente-servidor e pipe-and-filter) e um corpo de conhecimento que começa a ser sistematizado. Além disso, a adoção de linhas de produto e padrões de integração entre empresas reforça o papel da arquitetura como um elo central no desenvolvimento de software.
+
+O autor dedica parte importante do artigo a discutir o futuro. Ele aponta que mudanças como a computação em rede, a evolução para serviços distribuídos e a chegada da computação pervasiva trazem novos desafios. Entre eles, destacam-se a necessidade de arquiteturas que suportem coalizões dinâmicas de serviços, adaptação ao ambiente físico, automonitoramento e capacidade de equilibrar corretamente recursos, confiabilidade e corretude.
+
+No geral, o artigo funciona como um guia de reflexão sobre onde estamos e para onde a área deve caminhar. Mesmo tendo sido escrito no início dos anos 2000, fica claro que muitos dos pontos levantados continuam atuais. Como estudante, achei interessante perceber como a arquitetura de software não é apenas uma questão técnica, mas também estratégica, já que impacta diretamente a forma como sistemas evoluem e se integram em cenários cada vez mais complexos.
